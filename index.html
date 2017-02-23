@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PURMEINT的网站列表</title>
+<style>
+
+body {
+    width: 600px;
+    margin: 40px auto;
+    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+    font-size: 14px;
+    color: #444;
+}
+
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    width: 100%;    
+}
+/*----------------------*/
+
+.zebra td, .zebra th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;    
+}
+
+.zebra tbody tr:nth-child(even) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+}
+
+.zebra th {
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #eee);
+    background-image:    -moz-linear-gradient(top, #f5f5f5, #eee);
+    background-image:     -ms-linear-gradient(top, #f5f5f5, #eee);
+    background-image:      -o-linear-gradient(top, #f5f5f5, #eee); 
+    background-image:         linear-gradient(top, #f5f5f5, #eee);
+}
+
+.zebra th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;  
+}
+
+.zebra th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.zebra th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.zebra tfoot td {
+    border-bottom: 0;
+    border-top: 1px solid #fff;
+    background-color: #f1f1f1;  
+}
+
+.zebra tfoot td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.zebra tfoot td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.zebra tfoot td:only-child{
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px
+    border-radius: 0 0 6px 6px
+}
+  
+  
+
+.zebra2 td, .zebra th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;    
+}
+
+.zebra2 tbody tr:nth-child(even) {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+}
+
+.zebra2 th {
+    text-align: left;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+    border-bottom: 1px solid #ccc;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#eee));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #eee);
+    background-image:    -moz-linear-gradient(top, #f5f5f5, #eee);
+    background-image:     -ms-linear-gradient(top, #f5f5f5, #eee);
+    background-image:      -o-linear-gradient(top, #f5f5f5, #eee); 
+    background-image:         linear-gradient(top, #f5f5f5, #eee);
+}
+
+.zebra2 th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;  
+}
+
+.zebra2 th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.zebra2 th:only-child{
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.zebra2 tfoot td {
+    border-bottom: 0;
+    border-top: 1px solid #fff;
+    background-color: #f1f1f1;  
+}
+
+.zebra2 tfoot td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.zebra2 tfoot td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.zebra2 tfoot td:only-child{
+    -moz-border-radius: 0 0 6px 6px;
+    -webkit-border-radius: 0 0 6px 6px
+    border-radius: 0 0 6px 6px
+}  
+
+</style>
+</head>
+
+<body>
+
+<h2>PUREMINT网站列表</h2>
+<table class="zebra">
+    <thead>
+    <tr>
+        <th>#编号#</th>        
+        <th>简介</th>
+        <th>链接</th>
+
+    </tr>
+    </thead>
+</table>
+
+<table class="zebra2">
+    <tr>
+        <td>1</td>        
+        <td>泰安南关中学教师考评系统</td>
+        <td><a href="https://vote.zhangfan.win" target="_blank">https://vote.zhangfan.win</a></td>
+    </tr>        
+    <tr>
+        <td>2</td>         
+        <td>百度简版</td>
+        <td><a href="https://puremint.cn" target="_blank">https://puremint.cn</a></td>
+
+    </tr>
+    <tr>
+        <td>3</td>         
+        <td>Google搜索</td>
+        <td><a href="https://zhangfan.win" target="_blank">https://zhangfan.win</a></td>
+    </tr>    
+    <tr>
+        <td>4</td> 
+		<td>Redmine</td>
+        <td><a href="https://project.zhangfan.win" target="_blank">https://projct.zhangfan.win</a></td>
+    </tr>
+   
+
+    <tr>
+        <td>5</td> 
+        <td>博客</td>
+        <td><a href="http://blog.zhangfan.win" target="_blank">http://blog.zhangfan.win</a></td>
+    </tr>
+    <tr>
+        <td>6</td> 
+        <td>邮箱</td>
+        <td><a href="http://mail.zhangfan.win" target="_blank">http://mail.zhangfan.win</a></td>
+    </tr>    
+    <tr>
+        <td>7</td> 
+        <td>潍坊星友电梯有限公司</td>
+        <td><a href="http://www.xingyoulift.com" target="_blank">http://www.xingyoulift.com</a></td>
+    </tr>
+    <tr>
+
+		<td>8</td> 
+        <td>Redmine服务器维护</td>
+        <td><a href="http://server3.zhangfan.win:8888" target="_blank">http://server3.zhangfan.win:8888</a></td>
+    </tr>
+    <tr>
+        <td>9</td> 
+       <td>阿里云服务器维护</td>
+        <td><a href="http://server4.zhangfan.win:8888" target="_blank">http://server4.zhangfan.win:8888</a></td>
+    </tr>
+	<tr>
+        <td>10</td> 
+       <td>博客服务器维护</td>
+        <td><a href="http://server5.zhangfan.win:8888" target="_blank">http://server5.zhangfan.win:8888</a></td>
+    </tr>
+</table>
+
+<br>
+    
+
+</body>
+</html>
